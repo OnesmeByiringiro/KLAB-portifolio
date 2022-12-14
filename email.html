@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="myform">
+        <form action="">
+          <p>
+            <span><h1>My form</h1></span><br /><br />
+            <span>message</span>
+            <span><input type="text" required /></span> <br /><br /><br />
+
+            <span> Username</span>
+            <span> <input type="text" name="" id="" required /></span>
+            <br /><br /><br />
+
+            <span> Password</span>
+            <span> <input type="password" required /></span> <br /><br /><br />
+
+            <span id="email-label"> Email</span>
+            <span><input type="email" id="email-field" required /></span
+            ><br /><br />
+
+            <span id="errormsg"></span><br /><br />
+
+            <span
+              ><input type="button" value="send" onclick="emailvalidate()"
+            /></span>
+          </p>
+        </form>
+      </div>
+    </section>
+    <script>
+      var label = document.getElementById("email-label");
+      var email = document.getElementById("email-field");
+      var msg = document.getElementById("errormsg");
+      function emailvalidate() {
+        label.style.bottom = "45px";
+        if (
+          !email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)
+        ) {
+          msg.innerHTML = "enter valid email";
+          return false;
+        } else {
+          msg.innerHTML = "";
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: bookman old style;
+    box-sizing: border-box;
+  }
+  .main {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .myform {
+    margin-top: 20px;
+    width: 360px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 10px;
+  }
+  .myform h1 {
+    position: absolute;
+  }
+</style>
