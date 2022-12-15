@@ -1,89 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>about us page</title>
-</head>
-<body >
-   <section class="about">
-    <div class="main">
-      <img src="myprofile.jpg" alt="Image not displayed"> 
-      <div class="about-text">
-        <h1>More about me</h1>
-        <h5>my new <span> sevices</span></h5>
-      <p>
-        Iam a front end web developer i can provide a clean code and pixel perfect design.
-        I also make website more and more interactive, with web animation.
-        Iam a front end web developer i can provide a clean code and pixel perfect design.
-        I also make website more and more interactive, with web animation.
-        Iam a front end web developer i can provide a clean code and pixel perfect design.
-        I also make website more and more interactive, with web animation.
-        <button type="button">let's talk</button>
-      </p>
-    </div>
-    </div>
-   </section>
-</body>
-<footer>
-  <address> Contact: 0784805822 / 0724256242     Email : onesme byiringiro@gmail.com </address>
-</footer>
+  </head>
+  <body>
+    <section class="about">
+      <div class="main">
+        <img src="myprofile.jpg" alt="Image not displayed" />
+        <div class="about-text">
+          <h1>More about me</h1>
+          <h5>my new <span> sevices</span></h5>
+          <p>
+            Iam a front end web developer i can provide a clean code and pixel
+            perfect design. I also make website more and more interactive, with
+            web animation. Iam a front end web developer i can provide a clean
+            code and pixel perfect design. I also make website more and more
+            interactive, with web animation. Iam a front end web developer i can
+            provide a clean code and pixel perfect design. I also make website
+            more and more interactive, with web animation.
+            <button type="button">let's talk</button>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <address>
+      Contact: 0784805822 / 0724256242 Email : onesme byiringiro@gmail.com
+    </address>
+  </footer>
 </html>
-<style>*{
-  padding: 0;
-  margin: 0;
-  font-family:bookman old style;
-  box-sizing: border-box;
-}
-.about{
-  width: 100%;
-  padding: 78px,0px;
-  background-color: darkslategray;
-}
-.about img{
-  height: auto;
-  width: 420px;
-
-}
-.about-text{
-  width: 550px;
-}
-.main{
-  width: 1139px;
-  max-width: 95%;
-  margin:0 auto;
-  display: flex;
-align-items: center;
-justify-content: center;
-}
-.about-text h1{
-color: white;
-font-size:  50px;
-margin-bottom: 20px;
-text-transform : capitalize;
-}
-.about-text h5{
-color: white;
-font-size: medium;
-margin-bottom: 5px;
-text-transform:capitalize;
-}
-span{
-  color: darkred;
-
-}
-.about-text{
-  letter-spacing: 1px;
-}
-button{
-  background:rgb(207, 234, 235);
-  color: black;
-  font-size: 16px;
-  border: 2px solid transparent;
-  border-radius: 25px;
-  padding: 2px;
-  transition: .3s;
-}
-button:hover{
-  color: darkblue;
-  background-color: lime;
-}
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: bookman old style;
+    box-sizing: border-box;
+  }
+  .about {
+    width: 100%;
+    padding: 78px, 0px;
+    background-color: darkslategray;
+  }
+  .about img {
+    height: auto;
+    width: 420px;
+  }
+  .about-text {
+    width: 550px;
+  }
+  .main {
+    position: relative;
+    width: 1139px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-text h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  .about-text h5 {
+    color: white;
+    font-size: medium;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+  span {
+    color: darkred;
+  }
+  .about-text {
+    letter-spacing: 1px;
+  }
+  button {
+    background: rgb(207, 234, 235);
+    color: black;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 2px;
+    transition: 0.3s;
+  }
+  button:hover {
+    color: darkblue;
+    background-color: lime;
+  }
+  footer {
+    height: 50px;
+    background: darkslategray;
+  }
+  @media (max-width: 620px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 </style>

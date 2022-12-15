@@ -13,14 +13,18 @@
           <p>
             <span><h1>My form</h1></span><br /><br />
             <span>message</span>
-            <span><input type="text" required /></span> <br /><br /><br />
+            <span><input type="text" required id="message" /></span>
+            <br /><br /><br />
 
             <span> Username</span>
-            <span> <input type="text" name="" id="" required /></span>
+            <span>
+              <input type="text" name="" id="" required id="username"
+            /></span>
             <br /><br /><br />
 
             <span> Password</span>
-            <span> <input type="password" required /></span> <br /><br /><br />
+            <span> <input type="password" required id="password" /></span>
+            <br /><br /><br />
 
             <span id="email-label"> Email</span>
             <span><input type="email" id="email-field" required /></span
@@ -39,8 +43,10 @@
       var label = document.getElementById("email-label");
       var email = document.getElementById("email-field");
       var msg = document.getElementById("errormsg");
+      var Password = document.getElementById("password");
+      var Username = document.getElementById("username");
+      var Message = document.getElementById("message");
       function emailvalidate() {
-        label.style.bottom = "45px";
         if (
           !email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)
         ) {
@@ -50,6 +56,10 @@
           msg.innerHTML = "";
           return true;
         }
+      }
+      function changecolor() {
+        msg.style.backgroundColor = "yellow";
+        msg.addEventListener("mouseover", changecolor);
       }
     </script>
   </body>
@@ -76,7 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background: darkslategray;
     border-radius: 10px;
   }
   .myform h1 {
